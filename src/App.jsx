@@ -4,10 +4,10 @@ import ModelYSection from "./components/Model-Y-Section";
 import Model3Section from "./components/Model-3-Section";
 import ModelSSection from "./components/Model-S-Section";
 import ModelXSection from "./components/Model-X-Section";
-import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
-import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 import Powerwall from "./components/Powerwall";
 import Accessories from "./components/Accesories";
+import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
+import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 
 ChangeHeaderColor()
 HeaderHoverBG()
