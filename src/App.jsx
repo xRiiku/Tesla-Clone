@@ -1,8 +1,13 @@
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
 import ModelYSection from "./components/Model-Y-Section";
+import Model3Section from "./components/Model-3-Section";
+import ModelSSection from "./components/Model-S-Section";
+import ModelXSection from "./components/Model-X-Section";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
+import Powerwall from "./components/Powerwall";
+import Accessories from "./components/Accesories";
 
 ChangeHeaderColor()
 HeaderHoverBG()
@@ -16,7 +21,22 @@ function App() {
           <MainSection/>
         </div>
         <div className="snap-center">
+          <ModelSSection/>
+        </div>
+        <div className="snap-center">
+          <Model3Section/>
+        </div>
+        <div className="snap-center">
+          <ModelXSection/>
+        </div>
+        <div className="snap-center">
           <ModelYSection/>
+        </div>
+        <div className="snap-center">
+          <Powerwall/>
+        </div>
+        <div className="snap-center">
+          <Accessories/>
         </div>
       </main>
     </>
