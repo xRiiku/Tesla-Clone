@@ -32,7 +32,7 @@ function Header() {
             className={`
             absolute bg-black/5 backdrop-blur-lg rounded
             translate-x-[var(--left)] translate-y-[var(--top)]
-            left-0 top-0
+            left-4 top-0
             w-[var(--width)] h-[var(--height)]
             transition-all duration-500
             ease-in-out opacity-0 -z-10
