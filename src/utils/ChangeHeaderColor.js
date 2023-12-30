@@ -1,21 +1,22 @@
 export function ChangeHeaderColor(){
-    const observerOptions = {
+    const headerEl = document.querySelector("#landing-header")
+
+        const observerOptions = {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.90
-    }
-    const header = document.querySelector("#landing-header")
-    const observer = new IntersectionObserver(entries => {
+        rootMargin: "0px", // en cuanto se vea el elemento
+        threshold: 0.9, // porcentaje de visibilidad
+        }
     
-        entries.forEach(entry =>{
-            const {isIntersecting} = entry
-            if(isIntersecting){
-                const color = entry.target.getAttribute("data-header-color")
-                header.style.color = color
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const { isIntersecting } = entry
+            if (isIntersecting) {
+            const color = entry.target.getAttribute("data-header-color")
+            headerEl.style.color = color
             }
         })
-    }, observerOptions)
+        }, observerOptions)
     
-    const sections = document.querySelectorAll(".landing-section")
-    sections.forEach(section => observer.observe(section))
+        const sectionElements = document.querySelectorAll(".landing-section")
+        sectionElements.forEach((section) => observer.observe(section))
 }
