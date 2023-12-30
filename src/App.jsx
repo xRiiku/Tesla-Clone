@@ -1,5 +1,6 @@
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
+import MainSection from "./components/MainSection";
+import ModelYSection from "./components/Model-Y-Section";
 
 function App() {
   return (
@@ -7,19 +8,10 @@ function App() {
         <Header />
       <main className="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden">
         <div className="snap-center">
-          <HeroSection/>
+          <MainSection/>
         </div>
         <div className="snap-center">
-          <HeroSection/>
-        </div>
-        <div className="snap-center">
-          <HeroSection/>
-        </div>
-        <div className="snap-center">
-          <HeroSection/>
-        </div>
-        <div className="snap-center">
-          <HeroSection/>
+          <ModelYSection/>
         </div>
       </main>
     </>

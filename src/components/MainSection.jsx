@@ -1,12 +1,12 @@
 import Video from "../assets/Video"
 
-function HeroSection() {
+function MainSection() {
     return (
         <section className="bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center items-center">
 
             <div className="z-30 relative h-full flex flex-col">
                 <header>
-                    <h2 className="text-white pt-40 text-[40px] font-medium">Disfrute de Tesla</h2>
+                    <h2 className="text-white pt-28 text-[40px] font-medium">Disfrute de Tesla</h2>
                     <p className="text-white text-sm">Programe una prueba de conducción hoy mismo</p>
                 </header>
 
@@ -27,4 +27,4 @@ function HeroSection() {
     )
 }
 
-export default HeroSection
+export default MainSection
