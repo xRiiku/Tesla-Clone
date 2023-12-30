@@ -1,6 +1,9 @@
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
 import ModelYSection from "./components/Model-Y-Section";
+import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
+
+ChangeHeaderColor()
 
 function App() {
   return (
