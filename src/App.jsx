@@ -7,8 +7,6 @@ import ModelXSection from "./components/Model-X-Section";
 import Powerwall from "./components/Powerwall";
 import Accessories from "./components/Accesories";
 import CybertruckSection from "./components/Cybertruck-Section";
-import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
-import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 
 function App() {
   return (
@@ -43,7 +41,5 @@ function App() {
     </>
   );
 }
-ChangeHeaderColor()
-HeaderHoverBG()
 
 export default App;
