@@ -10,9 +10,10 @@ function Header() {
         <nav>
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
                 <li><a href="#models">Model S</a></li>
-                <li><a href="#model3">Model 3</a></li>
                 <li><a href="#modelx">Model X</a></li>
+                <li><a href="#model3">Model 3</a></li>
                 <li><a href="#modely">Model Y</a></li>
+                <li><a href="#cybertruck">Cybertruck</a></li>
                 <li><a href="#powerwall">Powerwall</a></li>
                 <li><a href="#accessories">Carga</a></li>
             </ul>
