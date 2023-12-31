@@ -24,8 +24,12 @@ function ModelXSection() {
                 </footer>
             </div>
 
-            <div className="absolute top-0 bottom-0 h-full w-full z-10">
+            <div className="hidden sm:block absolute top-0 bottom-0 h-full w-full z-10">
                 <img src="/model-x.avif" alt="Model X" className="h-full w-full object-cover object-center"></img>
+            </div>
+
+            <div className="sm:hidden absolute top-0 bottom-0 h-full w-full z-10">
+                <img src="/model-x-mobile.avif" alt="Model X" className="h-full w-full object-cover object-center"></img>
             </div>
         </section>
     )

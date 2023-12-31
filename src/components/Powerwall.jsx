@@ -11,7 +11,7 @@ function Powerwall() {
 
                 <footer className="flex flex-col flex-grow justify-end pb-20">
                     <div>
-                        <a className="text-white bg-black rounded 
+                        <a className="text-black bg-white rounded 
                         font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors" href="/"> 
                         Saber más
                         </a>
@@ -19,8 +19,12 @@ function Powerwall() {
                 </footer>
             </div>
 
-            <div className="absolute top-0 bottom-0 h-full w-full z-10">
+            <div className="hidden sm:block absolute top-0 bottom-0 h-full w-full z-10">
                 <img src="/powerwall.avif" alt="Powerwall" className="h-full w-full object-cover object-center"></img>
+            </div>
+
+            <div className="sm:hidden absolute top-0 bottom-0 h-full w-full z-10">
+                <img src="/powerwall-mobile.avif" alt="Powerwall" className="h-full w-full object-cover object-center"></img>
             </div>
         </section>
     )

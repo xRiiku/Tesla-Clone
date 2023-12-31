@@ -18,8 +18,12 @@ function Accessories() {
                 </footer>
             </div>
 
-            <div className="absolute top-0 bottom-0 h-full w-full z-10">
+            <div className="hidden sm:block absolute top-0 bottom-0 h-full w-full z-10">
                 <img src="/accessories.avif" alt="Accessories" className="h-full w-full object-cover object-center"></img>
+            </div>
+
+            <div className="sm:hidden absolute top-0 bottom-0 h-full w-full z-10">
+                <img src="/accessories-mobile.avif" alt="Accessories" className="h-full w-full object-cover object-center"></img>
             </div>
         </section>
     )
