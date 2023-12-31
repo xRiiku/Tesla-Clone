@@ -1,13 +1,20 @@
+import { useState } from "react";
 import Logo from "../assets/Logo";
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const toggleMenu = (prev) => {
+        setIsMenuOpen(!prev)
+    }
+
     return (
     <main id="landing-header" className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
         <div className="flex flex-grow basis-0">
             <Logo />
         </div>
 
-        <nav>
+        <nav className="hidden sm:block">
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
                 <li><a href="#models">Model S</a></li>
                 <li><a href="#modelx">Model X</a></li>
@@ -21,10 +28,10 @@ function Header() {
 
         <nav className="flex flex-grow justify-end basis-0">
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-                <li><a href="#">Soporte</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Cuenta</a></li>
-                <li><a href="#">Menú</a></li>
+                <li className="hidden sm:block"><a href="#">Soporte</a></li>
+                <li className="hidden sm:block"><a href="#">Tienda</a></li>
+                <li className="hidden sm:block"><a href="#">Cuenta</a></li>
+                <li onClick={() => toggleMenu(isMenuOpen)}><a href="#">Menú</a></li>
             </ul>
         </nav>
 
@@ -40,6 +47,28 @@ function Header() {
             `}
         >
         </div>
+
+        {/* NAV MOBILE */}
+        {isMenuOpen && (
+            <nav className="flex flex-col bg-white fixed top-0 left-0 right-0 bottom-0 ">
+                <button onClick={() => toggleMenu(isMenuOpen)} className=" w-screen flex justify-end p-5">
+                    <img className="text-black h-6 " src="/close-icon.svg" alt="close image"/>
+                </button>
+                <ul
+                className="flex flex-col mt-4 [&>li]:m-3 [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:text-black [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full"
+                >
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#home"> Home <img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a> </li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#models">Model S<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#modelx">Model X<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#model3">Model 3<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#modely">Model Y<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#cybertruck">Cybertruck<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#powerwall">Powerwall<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#accessories">Carga<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                </ul>
+            </nav>
+        )}
+
     </main>
     );
 }

@@ -2,7 +2,7 @@ import Video from "../assets/Video"
 
 function MainSection() {
     return (
-        <section className="landing-section bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center items-center"
+        <section id="home" className="landing-section bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center items-center"
         data-header-color="white">
 
             <div className="z-30 relative h-full flex flex-col">
