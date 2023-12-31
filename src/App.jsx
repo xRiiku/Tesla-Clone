@@ -9,7 +9,6 @@ import Accessories from "./components/Accesories";
 import CybertruckSection from "./components/Cybertruck-Section";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
-import { NavMenuMobile } from "./utils/NavMenuMobile";
 
 function App() {
   return (
@@ -47,6 +46,5 @@ function App() {
 
 ChangeHeaderColor()
 HeaderHoverBG()
-NavMenuMobile()
 
 export default App;
