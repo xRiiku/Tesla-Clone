@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Logo from "../assets/Logo";
+import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
+import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -72,5 +74,7 @@ function Header() {
     </main>
     );
 }
+ChangeHeaderColor()
+HeaderHoverBG()
 
 export default Header;
