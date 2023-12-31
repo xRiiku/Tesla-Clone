@@ -14,7 +14,7 @@ function Header() {
             <Logo />
         </div>
 
-        <nav className="hidden sm:block">
+        <nav className="hidden xl:block">
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
                 <li><a href="#models">Model S</a></li>
                 <li><a href="#modelx">Model X</a></li>
@@ -28,9 +28,9 @@ function Header() {
 
         <nav className="flex flex-grow justify-end basis-0">
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-                <li className="hidden sm:block"><a href="#">Soporte</a></li>
-                <li className="hidden sm:block"><a href="#">Tienda</a></li>
-                <li className="hidden sm:block"><a href="#">Cuenta</a></li>
+                <li className="hidden xl:block"><a href="#">Soporte</a></li>
+                <li className="hidden xl:block"><a href="#">Tienda</a></li>
+                <li className="hidden xl:block"><a href="#">Cuenta</a></li>
                 <li onClick={() => toggleMenu(isMenuOpen)}><a href="#">Menú</a></li>
             </ul>
         </nav>
