@@ -10,9 +10,6 @@ function Header() {
         setIsMenuOpen(!prev)
     }
 
-    ChangeHeaderColor()
-    HeaderHoverBG()
-
     return (
     <main id="landing-header" className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
         <div className="flex flex-grow basis-0">
@@ -79,3 +76,6 @@ function Header() {
 }
 
 export default Header;
+
+ChangeHeaderColor()
+HeaderHoverBG()
