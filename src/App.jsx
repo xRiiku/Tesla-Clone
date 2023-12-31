@@ -10,9 +10,6 @@ import CybertruckSection from "./components/Cybertruck-Section";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 
-ChangeHeaderColor()
-HeaderHoverBG()
-
 function App() {
   return (
     <>
@@ -46,5 +43,7 @@ function App() {
     </>
   );
 }
+ChangeHeaderColor()
+HeaderHoverBG()
 
 export default App;
