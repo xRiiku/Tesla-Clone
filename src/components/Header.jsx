@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/Logo";
 import { ChangeHeaderColor } from "../utils/ChangeHeaderColor"
 import { HeaderHoverBG } from "../utils/HeaderHoverBG"
@@ -9,6 +9,12 @@ function Header() {
     const toggleMenu = (prev) => {
         setIsMenuOpen(!prev)
     }
+
+    useEffect(() => {
+
+        ChangeHeaderColor();
+        HeaderHoverBG();
+    }, []);
 
     return (
     <main id="landing-header" className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
@@ -76,6 +82,3 @@ function Header() {
 }
 
 export default Header;
-
-ChangeHeaderColor()
-HeaderHoverBG()
