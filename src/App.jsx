@@ -8,9 +8,10 @@ import Powerwall from "./components/Powerwall";
 import Accessories from "./components/Accesories";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
+import CybertruckSection from "./components/Cybertruck-Section";
 
-HeaderHoverBG()
 ChangeHeaderColor()
+HeaderHoverBG()
 
 function App() {
   return (
@@ -24,13 +25,16 @@ function App() {
           <ModelSSection/>
         </div>
         <div className="snap-center">
-          <Model3Section/>
-        </div>
-        <div className="snap-center">
           <ModelXSection/>
         </div>
         <div className="snap-center">
+          <Model3Section/>
+        </div>
+        <div className="snap-center">
           <ModelYSection/>
+        </div>
+        <div className="snap-center">
+          <CybertruckSection/>
         </div>
         <div className="snap-center">
           <Powerwall/>
