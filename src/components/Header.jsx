@@ -9,21 +9,21 @@ function Header() {
 
         <nav>
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-                <li><a href="#"></a>Model S</li>
-                <li><a href="#"></a>Model 3</li>
-                <li><a href="#"></a>Model X</li>
-                <li><a href="#"></a>Model Y</li>
-                <li><a href="#"></a>Powerwall</li>
-                <li><a href="#"></a>Carga</li>
+                <li><a href="#models">Model S</a></li>
+                <li><a href="#model3">Model 3</a></li>
+                <li><a href="#modelx">Model X</a></li>
+                <li><a href="#modely">Model Y</a></li>
+                <li><a href="#powerwall">Powerwall</a></li>
+                <li><a href="#accessories">Carga</a></li>
             </ul>
         </nav>
 
         <nav className="flex flex-grow justify-end basis-0">
             <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-                <li><a href="#"></a>Soporte</li>
-                <li><a href="#"></a>Tienda</li>
-                <li><a href="#"></a>Cuenta</li>
-                <li><a href="#"></a>Menú</li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Menú</a></li>
             </ul>
         </nav>
 
@@ -32,7 +32,7 @@ function Header() {
             className={`
             absolute bg-black/5 backdrop-blur-lg rounded
             translate-x-[var(--left)] translate-y-[var(--top)]
-            left-4 top-0
+            left-0 top-0
             w-[var(--width)] h-[var(--height)]
             transition-all duration-500
             ease-in-out opacity-0 -z-10

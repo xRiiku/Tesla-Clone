@@ -9,8 +9,8 @@ import Accessories from "./components/Accesories";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
 
-ChangeHeaderColor()
 HeaderHoverBG()
+ChangeHeaderColor()
 
 function App() {
   return (
