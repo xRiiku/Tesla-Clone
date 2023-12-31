@@ -10,7 +10,7 @@ function ModelSSection() {
                 </header>
 
                 <footer className="flex flex-col flex-grow justify-end pb-20">
-                    <div className="flex mx-auto gap-x-4">
+                    <div className="flex flex-col gap-y-4 sm:flex-row mx-auto gap-x-4">
                         <a className="border-[3px] border-gray-600 bg-gray-600 text-sm rounded 
                         font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="/"> 
                         Pedido personalizado
