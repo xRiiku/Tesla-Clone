@@ -6,12 +6,10 @@ import ModelSSection from "./components/Model-S-Section";
 import ModelXSection from "./components/Model-X-Section";
 import Powerwall from "./components/Powerwall";
 import Accessories from "./components/Accesories";
+import CybertruckSection from "./components/Cybertruck-Section";
 import { ChangeHeaderColor } from "./utils/ChangeHeaderColor";
 import { HeaderHoverBG } from "./utils/HeaderHoverBG";
-import CybertruckSection from "./components/Cybertruck-Section";
-
-ChangeHeaderColor()
-HeaderHoverBG()
+import { NavMenuMobile } from "./utils/NavMenuMobile";
 
 function App() {
   return (
@@ -46,5 +44,9 @@ function App() {
     </>
   );
 }
+
+ChangeHeaderColor()
+HeaderHoverBG()
+NavMenuMobile()
 
 export default App;
